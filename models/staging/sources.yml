@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: hevo_raw
+    database: PC_HEVODATA_DB
+    schema: PUBLIC
+    tables:
+      - name: SNOWFLAKE_DESTINATION_RAW_CUSTOMERS
+      - name: SNOWFLAKE_DESTINATION_RAW_ORDERS
+      - name: SNOWFLAKE_DESTINATION_RAW_PAYMENTS

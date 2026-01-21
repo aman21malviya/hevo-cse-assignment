@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "A dimension table for customers with aggregated metrics"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer"
+        tests:
+          - not_null
+          - unique
+      - name: total_orders
+        description: "Total number of orders per customer"
+        tests:
+          - not_null
+      - name: lifetime_value
+        description: "Total payments made by customer"
+        tests:
+          - not_null
